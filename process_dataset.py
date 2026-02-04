@@ -24,9 +24,9 @@ class DataProcess():
         # checking data file path
         if os.path.isdir(raw_filepath):
             self.pd_data = pd.read_csv(
-                    os.path.join(raw_filepath,"actuator_data.csv"))
+                    os.path.join(raw_filepath,"2026-01-29_20-48-49.csv"))
             self.datafile_dir = raw_filepath
-            print("data path:", os.path.join(raw_filepath,"actuator_data.csv"))
+            print("data path:", os.path.join(raw_filepath,"2026-01-29_20-48-49.csv"))
         else:
             if(os.path.exists(raw_filepath)):
                 self.pd_data = pd.read_csv(os.path.join(raw_filepath))
